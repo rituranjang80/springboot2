@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         jdk 'jdk'
-        maven 'maven'    // fixed: was misspelled 'mavaen'
+        maven 'Maven'    // fixed: was misspelled 'mavaen'
     }
 
     stages {
