@@ -9,10 +9,10 @@ pipeline {
             steps { checkout scm }
         }
         stage('Build and Test') {
-            steps { sh 'mvn -B clean verify' }
+            steps { bat 'mvn -B clean verify' }
         }
         stage('Build Docker Image') {
-            steps { sh 'docker build -t employee-api:${BUILD_NUMBER} .' }
+            steps { bat 'docker build -t employee-api:${BUILD_NUMBER} .' }
         }
     }
     post {
