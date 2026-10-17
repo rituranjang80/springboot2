@@ -1,0 +1,9 @@
+target/
+data/
+*.db
+*.db-shm
+*.db-wal
+.classpath
+.project
+.settings/
+.idea/
